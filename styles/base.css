@@ -13,8 +13,12 @@ body {
     background-color: #f4f4f4;
 }
 
+header {
+    color: whitesmoke;
+    background: #25497e;
+}
 
-header, h2, footer {
+h2, footer {
     color: whitesmoke;
     background: #25497e;
 }
