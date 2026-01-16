@@ -1,0 +1,30 @@
+@media screen and (min-width: 620px) {
+     
+    /* Hide Hamburger */
+    #menu {
+        display: none;
+    }
+
+    /*  Navigation horizontal & visible */
+    .navigation {
+        position: static; /* Nav re-enters normal document flow */
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: none;
+    }
+
+    /* Header flexbox controls alignment and Nav is perfectly centered vertically */
+    header {
+        display: flex;
+    }
+
+    .navigation a{
+        margin: 0 1.5rem 0 0;
+    }
+
+    .gallery {
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

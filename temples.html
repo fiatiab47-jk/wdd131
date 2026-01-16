@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Picture Album. Developing a responsive web page that demonstrates proficiency with JavaScript language Syntax.
+    Utilizes a hamburger menu and respond to user requests">
+    <meta name="author" content="Albert Fiati">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="site-title"> Temple Album</span>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="gallery">
+            <!-- 9 figures -->
+            <figure>
+                <img src="images/accra_ghana_temple_lds.jpeg" alt="Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/rendering_abidjan_ivory_coast_temple.jpeg" alt="Abidjan Temple">
+                <figcaption>Abidjan Ivory Coast Temple</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/adelaide_australia_temple_lds.jpeg" alt="Australia Temple">
+                <figcaption>Adelaide Australia Temple</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/albuquerque_temple_lds.jpeg" alt="New Mexico Temple">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/belem_brazil_temple_exterior.jpeg" alt="Brazil Temple">
+                <figcaption>Belem Brazil Temple</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/baton_rouge_temple_lds.jpeg" alt="Baton Rouge Louisiana Temple">
+                <figcaption>Baton Rouge Louisiana Temple</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/chicago_illinois_lds_temple.jpeg" alt="The Chicago Illinois Temple at Night">
+                <figcaption>Chicago Illinois Temple</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/birmingham_temple_lds.webp" alt="Birmingham Alabama Temple and Grounds">
+                <figcaption>Birmingham Alabama Temple</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/cedar_city_temple_rendering.jpeg" alt="Cedar City Utah Temple Beautiful Grounds">
+                <figcaption>Cedar City Utah Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span>🌳 Albert Fiati 🌳 Ghana</p>
+        <p id="lastModified"></p> 
+    </footer>
+</body>
+</html>
