@@ -96,7 +96,7 @@ main {
 }
 .gallery {
     display: grid;
-    grid-template-columns: 1 fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
