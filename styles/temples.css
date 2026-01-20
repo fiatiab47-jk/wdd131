@@ -102,8 +102,9 @@ main {
 
 figure img {
     width: 100%;
-    height: auto;
-    /* object-fit:scale-down; */
+    display: block;
+    height: 300px;
+    object-fit :inherit;
 }
 
 figcaption {
