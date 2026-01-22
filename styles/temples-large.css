@@ -28,8 +28,9 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    figure img { 
-        max-height: 200px;
-        object-fit: cover;
-    }
+figure {
+    max-width: 200px;       /* smaller uniform width */
+    height: 200px;          /* uniform height for large screens */
+}
+
 }

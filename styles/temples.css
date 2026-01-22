@@ -100,11 +100,26 @@ main {
     gap: 2rem;
 }
 
-figure img {
+/* figure img {
     width: 100%;
     display: block;
     height: 300px;
     object-fit :inherit;
+    } */
+
+figure img {
+    width: 100%;                /* image fills container width */
+    height: 100%;               /* container controls height */
+    object-fit: cover;          /* preserves aspect ratio, crops if needed */
+    display: block;             /* removes inline spacing */
+}
+    
+/* MOBILE CONTAINER HEIGHT */       
+figure {
+    width: 100%;            /* responsive width on mobile */
+    max-width: 380px;       /* keeps uniform card width */
+    height: 300px;          /* uniform height for mobile */
+    margin: 10px auto;      /* optional spacing between figures */
 }
 
 figcaption {
@@ -114,4 +129,5 @@ figcaption {
 
 footer {
     padding: 0.5rem;
+    margin-top: 1.5rem;
 }
