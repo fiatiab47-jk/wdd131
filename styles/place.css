@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #4faf5a;
+    --secondary-color: #007a5e;
+    --background-color: #d5e7e6;
+    --text-color: #222;
+    --font-family: "Elms Sans",sans-serif ;
+    --main-background: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: var(--primary-color);
+    color: #050505;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: large;
+    width: 100%;
+    border-bottom: 1rem solid var(--secondary-color);
+}
+
+main {
+    background: var(--main-background);
+    /* display: grid;
+    grid-template-rows: 1fr; */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.info-list, .weather-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.info-list li, .weather-list li{
+    display: contents;
+}
+
+.label{
+    text-align: right;
+    font-weight: 800;
+}
+
+.value  {
+    font-weight: 500;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--text-color);
+    margin: 2rem 0;
+}
+
+.weather-icon{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 ;
+}
+
+.weather-icon img {
+    min-width: 64px;
+    height: auto;
+}
+
+.weather{
+    padding-bottom: 1.3rem;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+/* Media Query for Large Screen */
+@media screen and (min-width: 780px){
+    body{
+        max-width: 1300px;
+        margin: 0 auto;
+        /* font-size: 1rem; */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .relative{
+        position: relative;
+    }
+    
+    .relative img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    h2 {
+        background: var(--primary-color);
+        width: 76%;
+        margin: 5px 0 1rem -3%  ;
+    }
+
+    .info {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        background-color: rgba(196, 194, 194, 0.7);
+        max-width: 280px;    
+    }
+
+    .weather{
+        position: absolute;
+        background: rgba(196, 194, 194, 0.7);
+        bottom: 5rem;
+        right: 1.5rem;   
+    }
+
+    .weather-icon img{
+        max-width: 90px;
+        justify-content: center;
+    }
+
+    .divider {
+        border: none;
+        margin: 0;
+    }
+}
+    
+

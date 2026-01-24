@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana | Place Overview and Weather Information</title>
+    <meta name="description" content="WDD 131 - Explore Ghana,  a West African country known for its rich culture, historic landmarks, vibrant cities, and tropical climate ">
+    <meta name="author" content="Albert Fiati">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+    <main>
+        <div class="relative">
+            <section>
+                <div class="hero">
+                    <picture>
+                        <source srcset="images/hero-large.webp" media="(min-width: 1500px)" srcset="">
+                        <source srcset="images/hero-medium.webp" media="(min-width: 500px)" srcset="">
+                        <img src="images/hero-small.webp" alt="" width="1500" height="844">
+                    </picture>
+                </div>
+            </section>
+    
+            <!-- Information Section -->
+            <section class="info">
+                <h2>Data</h2>
+                <ul class="info-list">
+                    <li><span class="label">Area:</span><span class="value">238,533 km²</span></li>
+                    <li><span class="label">Population:</span><span class="value">33,512,000 (2025 est.)</span></li>
+                    <li><span class="label">Capital:</span><span class="value">Accra</span></li>
+                    <li><span class="label">Languages:</span><span class="value">English (official), Fante, Twi, Ewe, Ga</span></li>
+                    <li><span class="label">Currency:</span><span class="value">Ghanaian Cedi (GHS)</span></li>
+                    <li><span class="label">Time Zone:</span><span class="value">GMT (UTC+00:00)</span></li>
+                    <li><span class="label">Calling Code:</span><span class="value">+233</span></li>
+                    <li><span class="label">Internet TLD:</span><span class="value">.gh</span></li>
+                </ul>
+            </section>
+    
+            <hr class="divider">
+    
+            <!-- Weather Information -->
+            <Section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-icon">
+                    <!-- Mobile SVG icon -->
+                    <img src="images/clouds.svg" alt="Cloudy Weather Icon">
+                </div>
+    
+                <ul class="weather-list">
+                    <li><span class="label">Temperature:</span><span class="value"><span id="temperature">25</span> °C</span></li>
+                    <li><span class="label">Condition:</span><span class="value">Partly Cloudy</span></li>
+                    <li><span class="label">Wind:</span><span class="value"><span id="windspeed">10</span> km/h</span></li>
+                    <li><span class="label">Wind Chill:</span><span class="value"><span id="windchill">N/A</span></span></li>
+                </ul>
+            </Section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            © <span id="year"></span> 🌳 Albert Fiati 🌳 Ghana <br>
+            Last Modified:<span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
