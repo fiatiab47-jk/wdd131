@@ -144,6 +144,12 @@ footer {
         right: 1.5rem;   
     }
 
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+
     .weather-icon img{
         max-width: 90px;
         justify-content: center;
