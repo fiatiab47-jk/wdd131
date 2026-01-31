@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Picture Album. Developing a responsive web page that demonstrates proficiency with JavaScript language Syntax.">
+    <meta name="author" content="Albert Fiati">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <!-- <link rel="stylesheet" href="styles/temples-large.css"> -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="site-title"> Temple Album</span>
+        <button id="menu" aria-label="Main Main"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="old.html" title="Old">Old</a></li>
+                <li><a href="new.html" title="New">New</a></li>
+                <li><a href="large.html" title="Large">Large</a></li>
+                <li><a href="small.html" title="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="temples"></div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span>🌳 Albert Fiati 🌳 Ghana</p>
+        <p id="lastModified"></p> 
+    </footer>
+</body>
+</html>
