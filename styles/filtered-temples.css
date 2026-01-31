@@ -13,7 +13,6 @@ body {
 
 header {
     position: relative;
-    /* display: flex; */
     align-items: center;   /* vertical centering */
     justify-content: space-between; /* left + right alignment */
     min-height: 50px;      /* gives the header height */
@@ -49,7 +48,6 @@ header {
 }
 
 .navigation {
-    display: flex;
     position: absolute;
     flex-direction: column;
     justify-content: space-evenly;
