@@ -1,0 +1,72 @@
+:root{
+    --primary-color: #000000;      /* Black for headings, nav, footer */
+    --secondary-color: #C9A24D;     /* Gold for accents/buttons */
+    --background-color: #FFFFFF;    /* White for page background */
+    --text-color: #020202;          /* Dark gray for body text */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    min-height: 100vh;
+    /* display: grid;
+    grid-template-rows: auto 1fr auto; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.4;
+    margin: 0;
+}
+
+header{
+    padding: 2rem;
+}
+
+header h1 {
+margin: 0;
+font-family: "Nunito Sans";
+}
+
+header p{
+    font-size: 1.2rem;
+}
+
+header, footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+section {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+section h2 {
+    border-bottom: 1.5px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    width: 70%;
+    color: var(--primary-color);
+}
+
+section ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+footer{
+padding: 1.5rem;
+margin-top: 3rem;
+font-size: 1rem;
+}
