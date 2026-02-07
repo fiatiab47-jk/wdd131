@@ -137,7 +137,7 @@ fieldset input[type="checkbox"]{
         background: linear-gradient(#2341a5, #454164);
         max-width: 450px;
         width: 95%;
-        padding: .65rem;
+        padding: .75rem;
         margin: 2rem 1px 2% 0%;
         box-shadow: 1px 1px 4px rgb(20, 161, 8);
 }
