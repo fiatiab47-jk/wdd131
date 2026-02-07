@@ -186,3 +186,13 @@ footer {
 .stars input:checked~label {
     color: gold;
 }
+
+
+
+
+/* --------SCC Media Query-------- */
+@media screen and (max-width: 480px){
+    main{
+        padding: 1rem;
+    }
+}
