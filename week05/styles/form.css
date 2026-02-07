@@ -1,0 +1,188 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Elms Sans", sans-serif;
+    line-height: 1.5;
+    background-color: #eeeeee;
+    color: #333;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+p {
+    font-size: larger;
+}
+main {
+    max-width: 700px;
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: #f8f8f8;
+    margin: 0 auto ;
+}
+
+header{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: #afa8a8;
+    padding: 1rem;
+    font-size: larger;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+}
+
+h2 {
+    margin-bottom:  1rem;
+    text-align-last: center;
+    color: #384c8b;
+}
+
+
+
+/*----------- FORM STYLING --------------*/
+.rf1 {
+max-width: 500px; 
+margin: 0 auto;
+}
+
+.rf1 fieldset{
+    max-width: 450px;
+    border: 2px solid #7a997a;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    margin: 1.5rem 0;
+    width: 100%;
+    background-color: rgb(250, 243, 234);
+}
+
+.rf1 legend {
+    padding: 0 0.5rem;
+    color: #024bac;
+    font-weight: 400;
+}
+
+ .must-do {
+    color: rgb(49, 37, 221);
+    font-weight: 600;
+}
+
+.rf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+.rf1 div {
+    padding-top: 1rem;
+    color: rgb(59, 53, 150);
+    font-weight: 600;
+}
+
+.rf1 input[type="text"],
+.rf1 input[type="date"],
+.rf1 select,
+textarea {
+    background-color: #ffffff;
+    display: block;
+    color: #242323;
+    border-radius: 6px;
+    max-width: 450px;
+    padding: 0.75rem;
+    width: 100%;
+    appearance: none;
+}
+
+textarea {
+    margin-bottom: 15px;
+}
+
+/*----------- Useful Features Styling --------------*/
+fieldset .checkbox-row {
+    display: flex;
+}
+
+fieldset input[type="checkbox"]{
+
+    cursor: pointer;
+    margin-bottom: -7px;
+    width: 15px;
+}
+
+.checkbox-row label {
+    margin-right: 5px;
+}
+
+
+
+/*----------- Required  Styling--------------*/
+.rf1 select, input:required {
+    border: 2px solid rgb(48, 56, 175);
+}
+
+.rf1 input:required:valid {
+    border: 2px solid rgb(46, 148, 68);
+}
+
+
+/* Submit button */
+.rf1 input[type="submit"]{
+        border: none;
+        color: #fff;
+        background: linear-gradient(#2341a5, #454164);
+        max-width: 450px;
+        width: 95%;
+        padding: .65rem;
+        margin: 2rem 1px 2% 0%;
+        box-shadow: 1px 1px 4px rgb(20, 161, 8);
+}
+
+/*----------- Footer --------------*/
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    background: #afa8a8;
+    padding: .5rem;
+    color: #0a0a0a;
+    font-weight: 600;
+}
+
+
+/*----------- Stars Styling --------------*/
+.stars {
+    display: flex;
+    flex-direction: row;
+    /* left to right for easier hover */
+    justify-content: left;
+    margin-top: 0.5rem;
+}
+
+.stars input {
+    /* hide radio buttons */
+    display: none;
+}
+
+.stars label {
+    font-size: 2rem;
+    /* empty star color */
+    color: #555353;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Hover effect */
+/* .stars label:hover, */
+/* highlight on hover */
+/* .stars label:hover~label { */
+    /* color: gold; */
+/* } */
+
+/* Selected (checked) stars */
+.stars input:checked~label {
+    color: gold;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form</title>
+    <meta name="author" content="Albert Fiati">
+    <meta name="description" content="Submit your product review and share your experience with our products.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <h2>Product Review Form</h2>
+
+    <main>
+        <!-- Form -->
+        <form method="get" action="review.html" class="rf1">
+            <label for="product">Product Name: <span class="must-do">*</span></label>
+            <select name="product" id="product" required>
+                <!--  option populated by JS -->
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <!--Overall Rating  -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="stars">
+                    <div>Rating<span class="must-do">*</span></div>
+                    <input type="radio" id="rate1" name="rating" value="1" required><label for="rate1"></label>
+                    <input type="radio" id="rate2" name="rating" value="2" required><label for="rate2"></label>
+                    <input type="radio" id="rate3" name="rating" value="3" required><label for="rate3"></label>
+                    <input type="radio" id="rate4" name="rating" value="4" required><label for="rate4"></label>
+                    <input type="radio" id="rate5" name="rating" value="5" required><label for="rate5"></label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installDate">Date of Installation<span class="must-do">*</span></label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Features</legend>
+                <div>Useful Features<span class="must-do">*</span></div>
+
+                <!-- checkbox-row -->
+                <div class="checkbox-row"><label for="featureBattery">Battery Life</label><input type="checkbox" id="featureBattery" name="features"
+                    value="Battery Life" required></div>
+
+                <div class="checkbox-row"><label for="featureSupport">Customer Support</label><input type="checkbox" id="featureSupport" name="features"
+                    value="Customer Support" required></div>
+
+                <div class="checkbox-row"><label for="featureDesign">Design</label><input type="checkbox" id="featureDesign" name="features" value="Design"
+                    required></div>
+
+                <div class="checkbox-row"><label for="featureDurability">Durability</label><input type="checkbox" id="featureDurability" name="features"
+                    value="Durability" required></div>
+
+                <div class="checkbox-row"><label for="featureEase">Ease of Use</label><input type="checkbox" id="featureEase" name="features" value="Ease of Use"
+                    required></div>
+
+
+                <div class="checkbox-row"><label for="featurePrice">Price</label><input type="checkbox" id="featurePrice" name="features" value="Price" required></div>
+            </fieldset>
+
+             <!-- written Review -->
+            <label for="review">Written Review:</label>
+            <textarea name="review" id="review" rows="6" placeholder="Optional review..."></textarea>
+
+
+              <!-- User Name  -->
+            <label for="userName">Your Name: </label>
+            <input type="text" id="userName" name="userName" placeholder="Optional">
+
+            <!-- Submit -->
+            <input type="submit" value="Forward Review">
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>©<span id="year"></span> 🌳 Albert Fiati 🌳 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
