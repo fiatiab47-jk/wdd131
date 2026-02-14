@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #000000;       /* Black for headings, nav, footer */
+    --secondary-color: #C9A24D;     /* Gold for accents/buttons */
+    --background-color: #FFFFFF;     /* White for page background */
+    --text-color: #020202;           /* Dark gray for body text */
+    --border: #e0e0e0;
+    --article: rgba(191, 225, 226, 0.404);
+    --select: rgb(170, 169, 169);
+    --clickable: blue;
+    --book: linear-gradient(#2341a5, #454164);
+    --down: rgb(20, 161, 8);
+    --back: rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* -----------------------
+Service-page p and ul
+------------------------*/
+.move {
+   padding: 1rem 0 1rem 5%;
+}
+
+.move ul {
+    margin-left: 3%;
+}
+
+.services-page h2,
+ .c-page h2{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.space {
+    padding-top: .5rem;
+}
+
+#selectedServiceMessage {
+    margin-left: .5rem;
+}
+
+
+
+
+/* ------------------------------
+    SERVICE CARDS
+-------------------------------*/
+.feature-grid2 article {
+    background-color: var(--background-color);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    box-shadow: 0 4px 10px var(--back);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 450px; 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.feature-grid2 article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px var(--primary-color);
+}
+
+/* --- CARD CONTENT --- */
+.feature-grid2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    margin: 1rem 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.feature-grid2 img[src] {
+    opacity: 1;
+}
+
+.feature-grid2 button {
+    margin-top: 1rem;
+    background-color: var(--select);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5%;
+    max-width: 50%;
+}
+
+.feature-grid2 button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+/* ==================================
+          Contact Page CSS
+====================================*/
+.c-page {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.c-page p{
+    padding: .3rem;
+}
+
+.contact-info a {
+    color: var(--clickable);
+}
+
+.contact-info p, h3 {
+    padding-left: 3%;
+}
+
+.book-us {
+    display: flex; 
+    justify-content: center;
+    border-radius: 4px;
+    font-size: larger;
+    background-color: var(--primary-color);
+    color: var(--border);
+    width: 50%;
+    margin: 1.5rem auto 0;
+}
+
+
+
+.contact-section {
+    max-width: 500px;
+    margin: .5rem auto;
+    padding: 1rem;
+    background-color: var(--back);
+    border-radius: 6px;
+}
+
+.contact-section label {
+    display: block;
+    margin-top:  .5rem;
+}
+
+.contact-section fieldset {
+    margin: 0 auto 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    max-width: 420px;
+    width: 100%;
+    padding: 0.5rem 3%;
+    background: var(--article);
+}
+
+.contact-section legend {
+    padding: .5rem;
+}
+
+.contact-section input[type="tel"],
+.contact-section input[type="email"],
+.contact-section input[type="date"],
+.contact-section select,
+.contact-section input[type="text"],
+textarea{
+    background-color: rgb(245, 242, 243);
+    display: block;
+    border-radius: 6px;
+    padding: .65rem;
+    width: 100%;
+    appearance: none;
+}
+
+
+
+.contact-section [type="submit"]{
+    border: none;
+    color: var(--background-color);
+    background: var(--book);
+    max-width: 400px;
+    border-radius: 6px;
+    width: 95%;
+    padding: .55rem;
+    box-shadow: 1px 1px 4px var(--down);
+}
+
+.clear {
+    margin-left: 5% ;
+}
+
+
+
+
+/* -----------------------
+    thank-you.html Page
+---------------------------- */
+.hty {
+    padding: 2rem 0 0 1rem;
+}
+
+.thank-you-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--text-color);
+    background: var(--select);
+    padding: .5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background-color: #2341a5;
+    color: #e0e0e0;
+}
+
+
+.height {
+    min-height: 450px;
+}
