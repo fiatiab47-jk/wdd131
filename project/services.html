@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - A.J. Cutz | Services</title>
+    <meta name="description" content="A.J Cutz Online Barbershop offering services and pricing.">
+    <meta name="author" content="Albert Fiati">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- JS and CSS Links -->
+     <link rel="stylesheet" href="styles/service.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>A.J. Cutz Online BarberShop</h1>
+            <button id="menuButton" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+            <!-- Navigation -->
+            <nav id="primaryNav">
+                <ul>
+                    <li><a href="index.html" title="Home" >Home</a></li>
+                    <li><a href="services.html" title="Services" aria-current="page">Services</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="services-page">
+        <section>
+            
+            <h2>Our Services & Pricing</h2>
+            <div class="move">
+                <p>
+                    A.J. Cutz offers professional grooming services for both adults and children.
+                    Prices vary depending on the type of service selected.
+                </p>
+                <p>Select a service to save as your preferred option.</p>
+    
+                <div class="space"><p><strong>Services Categories:</strong></p></div>
+                <p>
+                <ul>
+                    <li><strong>Haircuts:</strong> Classic and modern cutting styles</li>
+                    <li><strong>Grooming:</strong> Beard and detail-focused services</li>
+                </ul>
+                </p>
+            </div>
+    
+            <div id="servicesContainer" class="feature-grid2"></div>
+            
+            <p id="selectedServiceMessage"></p>
+        </section>
+    </main>
+</body>
+</html>

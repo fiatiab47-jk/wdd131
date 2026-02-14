@@ -1,0 +1,267 @@
+/* -----------------
+    Base Styles
+----------------- */
+
+:root{
+    --primary-color: #000000;/* Black for headings, nav, footer */
+    --secondary-color: #C9A24D;/* Gold for accents/buttons */
+    --background-color: #FFFFFF;/* White for page background */
+    --text-color: #020202;/* Dark gray for body text */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+/* -----------------------
+    Header & Navigation 
+-------------------------*/
+#primaryNav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    top: 70%;
+    position: absolute;
+    right: 2%;
+    background: var(--primary-color);
+    padding: 0 5px;
+}
+
+li a:hover {
+    color: blue;
+    background-color: var(--background-color);
+    padding: .2rem;
+    border-radius: 2px;
+}
+
+nav li {
+    margin: .5rem 0;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+#menuButton {
+    position: absolute;
+    background: none;
+    border: none;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    right: 2rem;
+}
+/*---------Pending ----------*/
+#menuButton.open::before {
+     content: "❎";
+ }
+
+a {
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: 500;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-left: 2rem;
+    padding: .5rem;
+}
+
+
+/* -----------------------------
+Hero Section
+------------------------------ */
+.hero {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.cta-button {
+    color: var(--primary-color);
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.55rem 1.5rem;
+    background-color: var(--secondary-color);
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+
+/* -----------------------------
+   Features Section
+------------------------------ */
+.features {
+    padding: 0 1rem 1.5rem;
+    background-color: rgba(95, 158, 160, 0.404);
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5%;
+}
+
+.feature-grid, .feature-grid2 {
+    display: grid;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+}
+
+
+/* ---------------------------
+info-grid sections
+--------------------------- */
+.info-grid {
+    margin-left: 1.5rem;
+    display: grid;
+}
+
+.info-grid section,
+#selectedServiceMessage {
+    margin-top: 1.5rem;
+}
+
+.business-info ul {
+    list-style: none;
+}
+
+
+/*----------------
+    Footer
+---------------- */
+footer{
+    text-align: center;
+    background: var(--primary-color);
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    padding: .5rem;
+}
+
+
+/* -----------------------------
+   Desktop Layout
+------------------------------ */
+@media screen and (min-width: 768px){
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+    
+    #primaryNav ul {
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        margin-right: 2rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .hero {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-right: 3%;
+    }
+
+
+    .info-grid {
+        grid-template-columns: 2fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 1rem;
+        background-color: rgba(214, 214, 196, 0.329);
+        border-radius: 8px;
+    }
+
+    .about {
+        margin-left: 1.5rem;
+    }
+
+    .business-info {
+        margin-right: 1.5rem;
+    }
+
+    .business-info p, li {
+        margin-left: 20%;
+    } 
+
+    .business-info h2 {
+        margin-right: 3%;
+
+    }
+    
+
+    .cta {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1.5rem 1rem;
+    }
+
+    .cta h2 {
+        text-align: left;   
+    }
+
+    /* Services */
+        .feature-grid2 {
+            grid-template-columns: repeat(2, 1fr);
+            display: grid;
+        }
+    
+        main {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .move ul{
+            margin-left: -22.5%;
+        }
+
+        /* Button Container */
+        .clear {
+            margin-left: 7%;
+        }
+}

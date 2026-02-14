@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - A.J. Cutz | Contact</title>
+    <meta name="description" content="Contact A.J Cutz Online Barbershop to book appointments or ask questions about our Grooming services.">
+    <meta name="author" content="Albert Fiati">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- JS and CSS Links -->
+    <link rel="stylesheet" href="styles/service.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>A.J. Cutz Online BarberShop</h1>
+            <button id="menuButton" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+            <!-- Navigation -->
+            <nav id="primaryNav">
+                <ul>
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="services.html" title="Services">Services</a></li>
+                    <li><a href="contact.html" title="Contact" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main >
+        <div class="c-page">
+            <h2>Contact A.J. Cutz</h2>
+            <Section class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Phone: </strong><a href="tel:+1234567890">(123) 456-7890</a></p>
+    
+                <p><strong>Email: </strong><a href="mailto:info@ajcutzbarbershop.com">info@ajcutzbarbershop.com</a></p>
+               
+                <p>Please complete the form below and we will confirm your appointment.</p>
+            </Section>
+            <span class="book-us"> Book an Appointment</span>
+        </div>
+
+        <!------------------------- 
+                Booking Form 
+                --------------------------->
+        <section class="contact-section">
+            <form id="contactForm" action="thank-you.html" method="get">
+                <!-- Client's Information -->
+                <fieldset>
+                    <legend>Client Information</legend>
+                    <!-- Full-Name -->
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="First Last" required minlength="4">
+
+                    <!-- Email -->
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+
+                    <!-- Phone -->
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required placeholder="1234567890"> 
+                </fieldset>
+
+
+                <!-- Appointment Details -->
+                <fieldset>
+                    <legend>Appointment Details</legend>
+                    <!-- Service Selection -->
+                    <label for="service">Select Service</label>
+                    <select name="service" id="service" required>
+                        <option value=""  disabled selected>Click to Choose a Service</option>
+                        <option value="Beard">Beard Grooming</option>
+                        <option value="Classic">Classic Haircut</option>
+                        <option value="Fade & Taper">Fade & Taper</option>
+                        <option value="Kids">Kids Haircut</option>
+                    </select>
+
+                    <!-- Date -->
+                    <label for="appointmentDate">Preferred Date</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                    <!-- Message -->
+                    <label for="message">Additional Notes</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Leave message here"></textarea>
+                </fieldset>
+
+                <!-- Booking button -->
+                <div class="clear">
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </section>
+        <!-- <div id="formConfirmation"></div> -->
+
+    </main>
+
+    
+</body>
+
+</html>
